@@ -1,7 +1,7 @@
 # app.py
 
-import streamlit as s
+import streamlit as st
 
-s.header("Zena's Amazing Athleisure Catalog")
-s.text('Pick a sweatsuit color or style:')
-
+st.title("Zena's Amazing Athleisure Catalog")
+st.text('Pick a sweatsuit color or style:')
+st.selectbox()
