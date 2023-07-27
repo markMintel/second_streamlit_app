@@ -16,7 +16,7 @@ df = pd.DataFrame(catalog)
 colors = df[0].values.tolist()
 
 option = st.selectbox('Pick a sweatsuit color or style:', list(colors))
-product_caption = 'Our warm, comfortable, '+ option +' sweatsuit
+product_caption = "Our warm, comfortable, '+ option +' sweatsuit"
 
 my_cur.execute("select direct_url, price, size_list, upsell_product_desc from zenas_athleisure_db.products.catalog_for_website where color_or_style = '" + option + "';")
 df2 = my_cur.fetchone()
